@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6"><ion-title>Chat de: {{userName}}</ion-title></ion-col>
+        <ion-button size="6" color="dark"(click)="logout()" >desconectarse</ion-button> 
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let message of Tasks" lines="full">
+      <ion-label>
+        <strong>{{message.userMessage}}</strong>
+        <p>{{.message}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-input placeholder="escribe algo.."></ion-input>
+  <ion-buttons end>
+    <ion-button>
+      Enviar
+      <ion-icon name="send"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-footer>

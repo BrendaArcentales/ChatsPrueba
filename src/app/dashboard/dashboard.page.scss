@@ -1,0 +1,28 @@
+.home-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  
+    .header {
+      flex: 1;
+      .title {
+        padding-top: 70px;
+        img {
+          width: 100px;
+        }
+      }
+    }
+  
+    .data-container {
+      flex: 2;
+    }
+  }
+.gradient-1 {
+    --background: linear-gradient(
+      180deg,
+      rgba(132, 163, 183, 1) 0%,
+      rgb(74, 217, 236) 100%
+    );
+    background: linear-gradient(180deg, rgb(146, 240, 209) 0%, #47c7dd 100%);
+  }
